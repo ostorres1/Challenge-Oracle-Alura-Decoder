@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/candadonegro.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--OSWALD FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador-de-texto</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="div-titulo">
+            <h1 class="titulo" >Encriptador de texto</h1>
+        </div>
+        <form class="formulario" action="">
+            <label for="txtto">Texto a Encriptar (Minúsculas sin acento):</label>
+            <textarea class="text-1" name="texto1" placeholder="Ingresa el Texto" id="txt_init" onkeyup="minus(this)" cols="30" rows="10"></textarea>
+            <div class="botones">
+                <div class="acento">
+                    <input id="encripta" class="btn btn1" type="button" value="Encriptar!">
+                    <input id="acentos" class="btn btn2" type="button" value="Quitar acentos">
+                </div>
+                <input id="desencripta" class="btn btn3" type="button" value="Desencriptar!">
+            </div>
+            <label for="encriptado">Mensaje Encriptado/Desencriptado:</label>
+            <textarea class="text-2" name="texto2" id="txt_final" cols="30" rows="10"></textarea>
+            <div class="botones">
+                <input onclick="copy_clipboard()" id="copia" class="btn btn4" type="button" value="Copiar">
+            </div>
+        </form>
+    </div>
+    </div>
+    <footer>
+        <p>
+            <ul class="foot" >
+                <li>Oscar Fabian Torres Cely</li>
+                <li>Bogotá D.C. - Colombia</li>
+                <li>©2022</li>
+            </ul>            
+        </p>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/encripta.js" ></script>
+<script src="js/desencripta.js"></script>
+</html>
